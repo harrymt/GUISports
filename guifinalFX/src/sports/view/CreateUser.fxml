@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sports.CreateUserController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="background">
+      <children>
+        <AnchorPane id="anchorPane2" prefHeight="417.0" prefWidth="500.0" styleClass="top-segment" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER" prefHeight="346.0" prefWidth="431.0" spacing="5.0" AnchorPane.bottomAnchor="-46.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="431.0">
+                  <children>
+                    <GridPane prefHeight="364.0" prefWidth="395.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+                      <children>
+                        <Label id="label1" text="Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField id="textField1" fx:id="userId" prefWidth="407.0" promptText="e.g. Harry" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Label id="label1" text="Weight" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField id="textField1" fx:id="weightId" prefWidth="404.0" promptText="e.g. 65kg" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                        <TextField id="textField1" fx:id="heightId" prefWidth="404.0" promptText="e.g. 170cm" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                        <Label id="label1" text="Height" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                        <Label id="label1" text="Target" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                        <TextField id="textField1" fx:id="targetId" prefWidth="404.0" promptText="e.g. 420kj" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                        <Label id="label1" text="kg" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label id="label1" text="cm" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label id="label1" text="kj" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                      </children>
+                      <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="331.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="60.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                    </GridPane>
+                  </children>
+                </AnchorPane>
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+        <Button id="button1" fx:id="buttonSaveUser" defaultButton="true" layoutX="14.0" layoutY="436.0" onAction="#processSaveUser" prefHeight="50.0" prefWidth="472.0" text="Save User">
+          <font>
+            <Font name="Courier New Bold" size="18.0" />
+          </font>
+        </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
